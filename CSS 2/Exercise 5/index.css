@@ -1,0 +1,12 @@
+div{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: lightblue;
+    transition: all 0.5s;
+}
+
+div:hover{
+    background-color: lightgreen;
+    transform: scale(1.1);
+}

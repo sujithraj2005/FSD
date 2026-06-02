@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Circle</title>
+    <style>
+        div {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: red;
+            position: relative; 
+            animation: move 1s linear infinite;
+        }
+
+        @keyframes move {
+            0% {
+                left: 0;
+            }
+            50% {
+                left: calc(100% - 30px); /* subtract circle width, not 50px */
+            }
+            100% {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

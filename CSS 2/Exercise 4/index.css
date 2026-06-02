@@ -1,0 +1,32 @@
+body{
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 100px auto;
+    grid-template-areas: "header header" "navbar content";
+    height: 100vh;
+}
+
+nav{
+    grid-area: navbar;
+    background-color: lightblue;
+    list-style: none;
+}
+
+h1{
+    grid-area: header;
+    background-color: lightcoral;
+}
+
+div{
+    grid-area: content;
+    background-color: lightcyan;
+}
+
+@media (max-width:768px){
+    body{
+        grid-template-areas: "header header" "content content";
+    }
+    nav{
+        display: none;
+    }
+}

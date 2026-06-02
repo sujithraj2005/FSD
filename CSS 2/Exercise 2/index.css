@@ -1,0 +1,53 @@
+body{
+    background-color: lightcoral;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding:20px;
+    margin: 20px;
+    background-color: white;
+    width: 450px;
+    border-radius: 10px;
+
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px 0px;
+}
+
+.branch{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 0px;
+}
+
+.email{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 0px;
+}
+
+img{
+    height: 200px;
+    border: gray solid 1px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px){
+    .card{
+        width: 250px;
+        flex-direction: column;
+    }
+}
