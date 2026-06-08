@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Students</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body onload="showStudents()">
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="addstd.html">Add Student</a>
+        <a href="#">View Students</a>
+        <a href="logout.html">Logout</a>
+    </nav>
+    <table>
+        <tr>
+            <th>S.no.</th>
+            <th>Name</th>
+            <th>Roll no.</th>
+            <th>Branch</th>
+            <th>CGPA</th>
+            <th colspan="2">Action</th>
+        </tr>
+        <tbody id="showStudents">
+
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>

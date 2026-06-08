@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body onload="loadStudentForEdit()">
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="addstd.html">Add Student</a>
+        <a href="viewstd.html">View Students</a>
+        <a href="logout.html">Logout</a>
+    </nav>
+    <form action="viewstd.html" onsubmit="return updateStudent()">
+        <input type="hidden" id="editIndex" name="index">
+        <label for="name">Name:
+            <input type="text" id="name" name="name" required>
+        </label><br><br>
+        <label for="rollno">Roll no:
+            <input type="text" id="rollno" name="rollno" required>
+        </label><br><br>
+        <label for="branch">Branch:
+            <input type="text" id="branch" name="branch" required>
+        </label><br><br>
+        <label for="cgpa">CGPA:
+            <input type="number" step="0.01" id="cgpa" name="cgpa" required>
+        </label><br><br>
+        <button type="submit">Update</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

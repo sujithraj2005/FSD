@@ -1,0 +1,150 @@
+/* Color Variables */
+:root {
+    --primary: black;
+    --secondary: black;
+    --accent: #60a5fa;
+    --background: white;
+    --surface: #fbfcfc;
+    --text: black;
+    --border: #cbd5e1;
+    --hover: white;
+}
+
+nav {
+    background-color: var(--primary);
+    padding: 18px;
+    text-align: center;
+    background-color: black;
+}
+
+nav a {
+    color: var(--surface);
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 3px solid transparent;
+    transition: 0.3s;
+}
+
+nav a[href="#"] {
+    background-color: white;
+    color: black;
+    box-shadow: white 0px 0px 10px;
+}
+
+nav a:hover {
+    border: white solid 1.5px;
+    box-shadow: white 0px 0px 8px;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+    background-image: url('https://static.vecteezy.com/system/resources/previews/014/302/734/non_2x/luxury-abstract-banner-template-with-gold-blended-waves-on-black-background-with-copy-space-for-text-shiny-dynamic-light-stripes-futuristic-twisted-lines-design-in-dark-background-wallpaper-website-vector.jpg');
+}
+
+form {
+    width: 340px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--surface);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    box-shadow:white 0px 0px 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: var(--secondary);
+    color: var(--surface);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--hover);
+    color: black;
+    border: black solid 1px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+label {
+    text-align: left;
+    color: var(--text);
+}
+
+p {
+    text-align: center;
+    color: var(--primary);
+    font-size: 14px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+table a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid var(--border);
+    text-align: center;
+}
+
+th {
+    background-color: var(--primary);
+    color: var(--surface);
+}
+
+td {
+    background-color: var(--surface);
+}
+
+.num {
+    text-align: right;
+}
+
+tr:hover td {
+    background-color: #EEEEEE;
+}
+
+span{
+    color: red;
+}
